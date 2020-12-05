@@ -22,6 +22,13 @@ def seat_id_converter(seat):
 
     return row * 8 + col
 
+# seat id converter (Gudjon)
+# def calcSeatID (inputString):
+#     rowID = int(inputString[:7].replace("F", "0").replace("B", "1"), 2)
+#     colID = int(inputString[7:].replace("L", "0").replace("R", "1"), 2)
+#     return rowID * 8 + colID
+
+
 def part_one(seat_ids):
     return max(seat_ids)
 
